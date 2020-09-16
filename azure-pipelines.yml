@@ -29,7 +29,8 @@ steps:
   displayName: 'apply'
   inputs:
     provider: 'azurerm'
-    command: 'apply -auto-approve'
+    command: 'apply'
     environmentServiceNameAzureRM: 'terraform-azure'
     commandOptions: |
-      -var 'first_network_address_space=["10.3.0.0/16"]'   
+      -var 'first_network_address_space=["10.3.0.0/16"]'
+      -auto-approve
