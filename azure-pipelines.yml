@@ -31,6 +31,6 @@ steps:
     provider: 'azurerm'
     command: 'apply'
     environmentServiceNameAzureRM: 'terraform-azure'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/2/'
     commandOptions: |
-      -var 'first_network_address_space=["10.3.0.0/16"]'
-      -auto-approve
+       -auto-approve -var 'first_network_address_space=$(FirstNetworkAddressSpace)'
