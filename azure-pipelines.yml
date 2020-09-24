@@ -5,7 +5,6 @@
 
 trigger:
 - master
-- terraform-azure
 
 pool:
   vmImage: 'ubuntu-latest'
