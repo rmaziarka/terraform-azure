@@ -12,3 +12,5 @@ resource "azurerm_storage_account" "default" {
   account_kind              = "StorageV2"
 }
 
+
+
